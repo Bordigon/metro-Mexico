@@ -8,6 +8,8 @@ ENV PYTHONUNBUFFERED 1
 #    && rm -rf /tmp/pip-tmp
 
 #[Optional] Uncomment this section to install additional OS packages.
+RUN rm -f /etc/apt/sources.list.d/yarn.list
+
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends postgresql-client
 
