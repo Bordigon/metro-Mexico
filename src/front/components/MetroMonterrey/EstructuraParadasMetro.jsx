@@ -1,0 +1,117 @@
+export const paradasMetroL1 = [
+    {
+        id: 'talleres',
+        position: {x: 100, y: 100}, 
+        data: {label: 'TALLERES'},
+        type: 'input', 
+        draggable: false,
+    },
+    {
+        id: 'san-bernabe',
+        position: {x: 200, y: 180}, 
+        data: {label: 'SAN BERNABÉ'},
+        draggable: false,
+    },
+    {
+        id: 'unidad-modelo',
+        position: {x: 300, y: 260}, 
+        data: {label: 'UNIDAD MODELO'},
+        draggable: false,
+    },
+    {
+        id: 'aztlan',
+        position: {x: 400, y: 340}, 
+        data: {label: 'AZTLÁN'}, 
+        draggable: false,
+    },
+    {
+        id: 'penitenciaria',
+        position: {x: 600, y: 480}, 
+        data: {label: 'PENITENCIARÍA'},
+        draggable: false,
+    },
+    {
+        id: 'alfonso-reyes',
+        position: {x: 600, y: 560}, 
+        data: {label: 'ALFONSO REYES'},
+        draggable: false,
+    },
+    {
+        id: 'mitras',
+        position: {x: 600, y: 640}, 
+        data: {label: 'MITRAS'},
+        draggable: false,
+    },
+    {
+        id: 'simon-bolivar',
+        position: {x: 600, y: 720}, 
+        data: {label: 'SIMÓN BOLÍVAR'},
+        draggable: false,
+    },
+    {
+        id: 'hospital',
+        position: {x: 600, y: 800}, 
+        data: {label: 'HOSPITAL'},
+        draggable: false,
+    },
+    {
+        id: 'edison',
+        position: {x: 770, y: 810}, 
+        data: {label: 'EDISON'},
+        draggable: false,
+    },
+    {
+        id: 'central',
+        position: {x: 940, y: 820}, 
+        data: {label: 'CENTRAL'},
+        draggable: false,
+    },
+    {
+        id: 'cuauhtemoc',
+        position: {x: 1110, y: 840}, 
+        data: {label: 'CUAUHTÉMOC'},
+        draggable: false,
+    },
+    {
+        id: 'del-golfo',
+        position: {x: 1310, y: 875}, 
+        data: {label: 'DEL GOLFO'},
+        draggable: false,
+    },
+    {
+        id: 'felix-u.gomez',
+        position: {x: 1510, y: 910}, 
+        data: {label: 'FÉLIX U.GÓMEZ'},
+        draggable: false,
+    },
+    {
+        id: 'parque-fundidora',
+        position: {x: 1710, y: 960}, 
+        data: {label: 'PARQUE FUNDIDORA'},
+        draggable: false,
+    },
+    {
+        id: 'y-griega',
+        position: {x: 1910, y: 995}, 
+        data: {label: 'Y GRIEGA'},
+        draggable: false,
+    },
+    {
+        id: 'eloy-cavazos',
+        position: {x: 2100, y: 1010}, 
+        data: {label: 'ELOY CAVAZOS'},
+        draggable: false,
+    },
+    {
+        id: 'lerdo-de-tejeda',
+        position: {x: 2270, y: 1025}, 
+        data: {label: 'LERDO DE TEJEDA'},
+        draggable: false,
+    },
+    {
+        id: 'exposicion',
+        position: {x: 2440, y: 1035}, 
+        data: {label: 'EXPOSICIÓN'},
+        draggable: false,
+    }
+]; 
