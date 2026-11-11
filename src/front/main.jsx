@@ -4,12 +4,12 @@ import './index.css'
 import { ReactFlow, Background, Controls, applyEdgeChanges, applyNodeChanges } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 
-import { paradasMetroL1 } from './components/MetroMonterrey/EstructuraParadasMetro.jsx';
-import { conexionesMetro } from './components/MetroMonterrey/ConexionesParadasMetro.jsx';
+import { paradasMetro } from './components/MetroMonterrey/EstructuraParadasMetro.jsx';
+import { conexionesMetro  } from './components/MetroMonterrey/ConexionesParadasMetro.jsx';
 
 const Main = () => {
-    const [nodes, setNodes] = useState(paradasMetroL1);
-    const [edges, setEdges] = useState(conexionesMetro);
+    const [nodes, setNodes] = useState(paradasMetro());
+    const [edges, setEdges] = useState(conexionesMetro());
 
     const onNodesChange = useCallback(
         (changes) => setNodes((snap) => applyNodeChanges(changes, snap)),
@@ -19,7 +19,6 @@ const Main = () => {
         (changes) => setEdges((snap) => applyEdgeChanges(changes, snap)),
         [],
     );
-
     return (
         <div style={{ height: '600px', width: '100%' }}>
             <ReactFlow
