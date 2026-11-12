@@ -1,11 +1,11 @@
-import { Linea1 } from "./LineasM/Linea1";
-import { Linea2 } from "./LineasM/Linea2";
-import { Linea3 } from "./LineasM/Linea3";
+import { Linea1 } from "../../LineasM/Linea1";
+import { Linea2 } from "../../LineasM/Linea2";
+import { Linea3 } from "../../LineasM/Linea3";
 const origen = {x:25.759710090075117, y:-100.36921058426005}
 
 const positionXY = (i, result) =>{
-    const y =(origen.x - result[i].coords.x) * 15000;
-    const x =-(origen.y - result[i].coords.y) * 19000;
+    const y =(origen.x - result[i].coords.x) * 13000;
+    const x =-(origen.y - result[i].coords.y) * 17000;
     return {x:x, y:y};
 }
 
@@ -23,7 +23,7 @@ export const paradasMetro = () => {
             result[i].position=positionXY(i, result);
             result[i].width = 'min-content';
             result[i].id = `${k}`+`${i}`;
-            result[i].style={backgroundColor:colorL(k)};
+            result[i].style={backgroundColor:colorL(k), fontSize:'0.8em'};
             result[i].draggable=false;
         }
     }
