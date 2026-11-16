@@ -10,20 +10,40 @@ const positionXY = (i, result) =>{
 }
 
 export const colorL = (k) =>{
-    if(k == 0) return '#fafad2'
+    if(k == 0) return '#eaea89'
     else if(k == 1) return 'lightgreen'
     else return 'lightcoral'
 }
 
 export const paradasMetro = () => {
     let paradas = [Linea1, Linea2, Linea3];
-    for(let k = 0;k < paradas.length; k++){
+
+    for(let k = 0; k < paradas.length; k++){
         let result = paradas[k];
         for(let i = 0; i<result.length; i++){
             result[i].position=positionXY(i, result);
             result[i].width = 'min-content';
             result[i].id = `${k}`+`${i}`;
-            result[i].style={backgroundColor:colorL(k), fontSize:'0.8em'};
+            let compartida = false; 
+            let lineaCompartida = -1;
+            for(let l = 0; l < paradas.length; l++) {
+                if(l == k) {
+                    continue;
+                }
+                for (let j = 0; j < paradas[l].length; j++) {
+                    if (paradas[l][j].nombre == result[i].nombre) {
+                        compartida = true; 
+                        lineaCompartida = l; 
+                    } 
+                }
+            }
+
+            if (compartida) {
+                result[i].style={background:`linear-gradient(to right, ${colorL(k)} 50%, ${colorL(lineaCompartida)} 50%)`, fontSize:'0.8em'};
+            } else {
+                result[i].style={backgroundColor:colorL(k), fontSize:'0.8em'};
+            }
+
             result[i].draggable=false;
         }
     }

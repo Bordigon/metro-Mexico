@@ -1,7 +1,7 @@
 import { paradasMetro } from "./EstructuraParadasMetro";
 
 export const colorL = (k) =>{
-    if(k == 0) return 'yellow'
+    if(k == 0) return '#e7e743'
     else if(k == 1) return 'green'
     else return 'coral'
 }

@@ -76,7 +76,7 @@ export const Linea1 = [
     {
         nombre: 'felix-u.gomez', 
         coords: {x: 25.683889, y: -100.296667},
-        data: {label: 'FÉLIX U.GÓMEZ'},
+        data: {label: 'FÉLIX U. GÓMEZ'},
         ...nodoHorizontal,
     },
     {
