@@ -4,15 +4,16 @@ const Navbar = () => {
 
 	return (
 		<div>
-			<Panel position="center-left" style={{
-				top: '50vh',
-				left: '20px',
-				width: '100px',
-				backgroundColor: 'lightgreen',
-				borderRadious: '100%'
-			}}>
-				top-left
-			</Panel>
+			<button class="btn-solid theme-primary" type="button" data-bs-toggle="drawer" data-bs-target="#drawerScrolling" aria-controls="drawerScrolling">Calcular ruta</button>
+			<dialog class="drawer drawer-start" data-bs-scroll="true" data-bs-backdrop="false" id="drawerScrolling" aria-labelledby="drawerScrollingLabel">
+				<div class="drawer-header">
+					<h5 class="drawer-title" id="drawerScrollingLabel">Opciones de viaje</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+				</div>
+				<div class="drawer-body">
+					<p>blablabla</p>
+				</div>
+			</dialog>
 		</div>
 	);
 };

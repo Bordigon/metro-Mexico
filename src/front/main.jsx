@@ -31,10 +31,7 @@ const Main = () => {
     return (
         <div style={{ height: '100vh', width: '100vw' }}>
 
-            {navBar ? (
-                <div><Navbar /><Panel onClick={handleOnClick}>soy boton</Panel></div>
-            ) : (<Panel onClick={handleOnClick}>{NavButton()}</Panel>
-            )}
+            <Panel><Navbar /></Panel>
             <div style={{ height: '100vh', width: '100vw' }}>
                 <ReactFlow
                     nodes={nodes}
