@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useEffect } from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import { ReactFlow, Background, Controls, applyEdgeChanges, applyNodeChanges, ControlButton, Panel, ViewportPortal } from '@xyflow/react';
+import { ReactFlow, Background, Controls, Panel, ViewportPortal } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 import Navbar from './components/Navbar.jsx';
 import { paradasMetro } from './components/MetroMonterrey/EstructuraParadasMetro.jsx';
@@ -19,7 +19,8 @@ const Main = () => {
                 <ReactFlow
                     nodes={nodes}
                     edges={edges}
-                    fitView
+                    defaultViewport={{ x: 0, y: 0, zoom: 0.46 }}
+                    minZoom={0.425}
                     translateExtent={[
                         [MAP_X, MAP_Y],
                         [MAP_X + MAP_W, MAP_Y + MAP_H],
