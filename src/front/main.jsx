@@ -6,15 +6,11 @@ import '@xyflow/react/dist/style.css';
 import Navbar from './components/Navbar.jsx';
 import { paradasMetro } from './components/MetroMonterrey/EstructuraParadasMetro.jsx';
 import { conexionesMetro } from './components/MetroMonterrey/ConexionesParadasMetro.jsx';
-import miFondo from './assets/monterrey_gris_baja_res.png'
+import Mapa, { MAP_X, MAP_Y, MAP_W, MAP_H } from './components/Mapa.jsx';
 
 const Main = () => {
     const nodes = paradasMetro();
     const edges = conexionesMetro();
-    const MAP_X = -537;
-    const MAP_Y = -513;
-    const MAP_W = 3000;
-    const MAP_H = 3000;
     return (
         <div style={{ height: '100vh', width: '100vw' }}>
 
@@ -31,20 +27,7 @@ const Main = () => {
 
                 >
                     <ViewportPortal>
-                        <img
-                            src={miFondo}
-                            draggable={false}
-                            style={{
-                                position: 'absolute',
-                                zIndex: -1,
-                                transform: `translate(${MAP_X}px, ${MAP_Y}px)`,
-                                width: 3000,
-                                opacity: 0.3,
-                                pointerEvents: 'none',
-                                width: MAP_W,
-                                height: MAP_H,
-                            }}
-                        />
+                        <Mapa />
                     </ViewportPortal>
                     <Controls orientation='horizontal' />
                     <Background />

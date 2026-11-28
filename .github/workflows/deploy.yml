@@ -2,7 +2,7 @@ name: Deploy Vite to GitHub Pages
 
 on:
   push:
-    branches: ["estructura-paradas-metro", "master", "develop", "navbar"] # Cambia a "master" si tu rama principal se llama así
+    branches: ["estructura-paradas-metro", "master", "develop", "navbar", "mapa"] # Cambia a "master" si tu rama principal se llama así
 
 permissions:
   contents: read
